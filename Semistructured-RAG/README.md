@@ -38,7 +38,6 @@ Source: LangChain
 ├── main.py
 ├── prompts.py
 ├── summarizer.py
-├── tree.txt
 └── vector_store.py
 ```
 
