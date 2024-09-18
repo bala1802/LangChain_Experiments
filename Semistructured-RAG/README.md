@@ -52,3 +52,10 @@ The script `summarizer.py` is responsible for generating summaries of both the `
 # Prompts
 
 The script `prompts.py` contains the necessary prompts used for processing user queries as well as for summarizing the extracted texts and tables. These prompts serve as the input instructions for interacting with the language model, guiding it to perform tasks such as query-based retrieval and generating concise summaries of the document’s content. 
+
+# Vector Store
+
+- The `multi-vector retriever` is employed to generate summaries of both tables and, optionally, text. These summaries enhance the quality of retrieval by condensing key information while maintaining relevance to the query. Alongside the summary, raw table elements are also stored.
+- During retrieval, the summaries improve search efficiency and relevance, while the raw tables are passed to the language model (LLM) to provide the complete table context.
+- The InMemoryStore is used to store the raw text and tables extracted from the document, ensuring that the original, unprocessed content is preserved for direct access.
+- - Meanwhile, the vectorstore holds the embedded summaries, which are optimized for retrieval tasks.
