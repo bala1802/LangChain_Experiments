@@ -29,4 +29,15 @@ Source: LangChain
 
 # Repository
 
-
+```
+.
+├── README.md
+├── data
+│   └── document.pdf
+├── data_extraction.py
+├── main.py
+├── prompts.py
+├── summarizer.py
+├── tree.txt
+└── vector_store.py
+```
