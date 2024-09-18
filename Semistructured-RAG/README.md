@@ -48,3 +48,7 @@ The script `data_extraction.py` is designed to extract both `Texts` and `Tables`
 # Summarizer
 
 The script `summarizer.py` is responsible for generating summaries of both the `Text` and `Tables` extracted during the `Data Extraction` phase. This is accomplished using the `OpenAI GPT-3.5-Turbo` large language model, which processes the retrieved content to create concise and informative summaries.
+
+# Prompts
+
+The script `prompts.py` contains the necessary prompts used for processing user queries as well as for summarizing the extracted texts and tables. These prompts serve as the input instructions for interacting with the language model, guiding it to perform tasks such as query-based retrieval and generating concise summaries of the document’s content. 
