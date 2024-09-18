@@ -41,3 +41,7 @@ Source: LangChain
 ├── tree.txt
 └── vector_store.py
 ```
+
+# Data Ingestion
+
+The script `data_extraction.py` is designed to extract both `Texts` and `Tables` from the provided PDF document, which in this case is located at `data/document.pdf`. To achieve this, the `unstructured` library is utilized, offering effective parsing of PDFs by splitting the content into structured text and table components. This enables seamless processing of semi-structured data by separating different content types while preserving their context for downstream tasks such as retrieval and analysis.
